@@ -1,0 +1,67 @@
+body {
+  font-family: "PT Sans Caption", sans-serif;
+  background-image: linear-gradient(rgba(1, 4, 49, 0.7), rgba(0, 2, 40, 0.7)),
+    url(../image/painting-mountain-lake-with-mountain-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Pacifico", cursive;
+}
+#header h1 {
+  font-size: 50px;
+  color: white;
+  isolation: isolate;
+  position: relative;
+  width: fit-content;
+}
+#header h1::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 40%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(13 110 253);
+  transition: 0.5s;
+  border-radius: 50%;
+  z-index: -1;
+}
+#header h1:hover::before {
+  height: 100%;
+}
+
+#Bookmark h2 {
+  font-size: 25px;
+  background-image: linear-gradient(to right, white 40%, blue 60%, white 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#Bookmark input {
+  background-color: #53608071;
+}
+input,
+select,
+textarea {
+  color: white !important;
+}
+::placeholder {
+  color: rgba(255, 255, 255, 0.415) !important;
+}
+
+#model::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.278);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
